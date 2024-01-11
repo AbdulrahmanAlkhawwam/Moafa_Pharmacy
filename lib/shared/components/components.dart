@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 // you should use stack with this widget
 Widget mainDesignV () => Column (
@@ -18,6 +19,7 @@ Widget mainDesignV () => Column (
     )
   ],
 );
+// you should use stack with this widget
 Widget mainDesignH () => Row (
   children: [
     Column(
@@ -35,17 +37,25 @@ Widget mainDesignH () => Row (
     )
   ],
 );
+
 Widget upDesign ()=> Stack(
   alignment: Alignment.topLeft,
   children: [
     Image.asset("images/design/topGreen.png"),
-    Image.asset("images/design/topYellow.png"),
+    Image.asset("images/design/topOrange.png"),
   ],
 );
 Widget downDesign ()=> Stack(
   alignment: Alignment.bottomRight,
   children: [
     Image.asset("images/design/bottomGreen.png"),
-    Image.asset("images/design/bottomYellow.png"),
+    Image.asset("images/design/bottomOrange.png"),
   ],
+);
+
+void navigateAndFinish (context, Screen) =>
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => Screen),
+      (route)=> false ,
 );
