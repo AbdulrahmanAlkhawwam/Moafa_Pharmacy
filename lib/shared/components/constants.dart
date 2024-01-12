@@ -1,4 +1,6 @@
 
+import 'package:moafa/shared/styles/colors.dart';
+
 List <String> Logos =[
   "images/Logo/whiteLogo.png",
   "images/Logo/GreenLogo.png",
@@ -10,7 +12,7 @@ List <String> Designs =[
   "images/Design/bottomOrange.png",
   "images/Design/topOrange.png"
 ];
-List <String> Onboard = [
-  "Moafa",
-  "is the best portable pharmacy , which delivery your medicine in lase than 30 minute ",
+List <List <dynamic>> Onboard = [
+  ["Moafa",deepGreen,lightBlue],
+  ["is the best portable pharmacy , which delivery your medicine in lase than 30 minute ",deepGreen,lightBlue],
 ];

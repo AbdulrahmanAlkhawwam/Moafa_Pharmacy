@@ -52,7 +52,7 @@ Widget downDesign ()=> Stack(
     Image.asset("images/design/bottomOrange.png"),
   ],
 );
-
+Widget emptySpace ()=>const Expanded(child: SizedBox());
 void navigateAndFinish (context, Screen) =>
     Navigator.pushAndRemoveUntil(
       context,
